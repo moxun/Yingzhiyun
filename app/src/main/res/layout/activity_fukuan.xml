@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <RelativeLayout
+        android:id="@+id/tool_relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+        <ImageView
+            android:id="@+id/finish"
+            android:src="@mipmap/leftdetail"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_15" />
+        <TextView
+            android:id="@+id/tool_title"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="付款"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/sp_16"
+            />
+
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/fen"
+        android:alpha="0.5"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="#cccccc"
+        android:layout_below="@+id/tool_relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginTop="@dimen/dp_18"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_below="@id/fen"
+        android:layout_width="58dp"
+        android:layout_height="20dp"
+        android:text="课程信息"
+        android:textColor="#ff333333"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/subject_type"
+        android:textColor="#E25162"
+        android:gravity="center"
+        android:text="语"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="@dimen/dp_18"
+        android:layout_height="@dimen/dp_18" />
+
+    <TextView
+        android:layout_below="@+id/title"
+        android:id="@+id/course_title"
+        android:layout_marginStart="@dimen/sp_10"
+        android:layout_marginTop="@dimen/dp_19"
+        android:layout_toEndOf="@+id/subject_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高考语文一轮复习"
+        android:textColor="#ff000000"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/course_time"
+        android:layout_marginTop="@dimen/dp_7"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_below="@+id/course_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10月6日-11月17日  16：00-18：00"
+        android:textColor="#ff666666"
+        android:textSize="10sp"
+        />
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_below="@+id/course_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="免费"
+        android:textColor="#ff1091e9"
+        android:textSize="@dimen/sp_20"
+        />
+    <TextView
+        android:id="@+id/yu_e"
+        android:layout_below="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前余额0趣学币，需充值49趣学币"
+        android:textColor="#ff1091e9"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginStart="@dimen/dp_20"
+        android:textSize="12sp"
+        />
+    <View
+        android:id="@+id/fen1"
+        android:alpha="0.5"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="#cccccc"
+        android:layout_below="@+id/yu_e"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"/>
+
+    <TextView
+        android:id="@+id/pay_way"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_below="@id/fen1"
+        android:layout_width="58dp"
+        android:layout_height="20dp"
+        android:text="支付方式"
+        android:textColor="#ff333333"
+        android:textSize="14sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy_payway"
+        android:layout_marginTop="@dimen/dp_5"
+
+        android:layout_below="@+id/pay_way"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <TextView
+        android:layout_marginBottom="@dimen/dp_20"
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/dp_335"
+        android:layout_height="@dimen/dp_42"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_25"
+        android:background="@mipmap/login_button"
+        android:gravity="center"
+        android:text="确认支付"
+        android:textColor="#ffffffff"
+        android:textSize="18sp" />
+</RelativeLayout>

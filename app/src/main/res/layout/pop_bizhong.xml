@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_weight="8"
+            
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reList"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ScrollView>
+
+
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:background="#F1F1F1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50">
+
+            <EditText
+                android:id="@+id/ed_pl"
+                android:hint="来点互动吧~"
+                android:textSize="@dimen/sp_14"
+                android:paddingStart="@dimen/dp_10"
+                android:gravity="center"
+                android:layout_margin="@dimen/dp_6"
+
+                android:imeOptions="actionSend|flagNoExtractUi"
+                android:inputType="text"
+                android:background="@drawable/shape_white_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

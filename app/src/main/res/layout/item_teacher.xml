@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/back_whitr"
+    android:layout_marginEnd="@dimen/dp_20"
+    android:layout_marginStart="@dimen/dp_20"
+    android:layout_marginTop="@dimen/dp_15"
+    android:layout_height="@dimen/dp_79">
+    <RelativeLayout
+        android:id="@+id/re_teacher"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/course_teacherhead"
+            android:src="@drawable/icon_tou"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_16"
+
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_36" />
+        <TextView
+            android:id="@+id/teacher_name"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/sp_15"
+
+            android:layout_toEndOf="@+id/course_teacherhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是老师名字"
+            android:textColor="#ff666666"
+            android:textSize="@dimen/sp_10"
+            />
+        <TextView
+            android:id="@+id/teacherLabel"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_below="@+id/teacher_name"
+            android:layout_toEndOf="@+id/course_teacherhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="授课老师"
+            android:textColor="#ff999999"
+            android:textSize="12sp"
+            />
+
+        <ImageView
+            android:id="@+id/teacher_info"
+           android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp_25"
+            android:src="@mipmap/icon_tishi"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/sp_10"
+            android:layout_height="@dimen/dp_10" />
+    </RelativeLayout>
+
+</LinearLayout>

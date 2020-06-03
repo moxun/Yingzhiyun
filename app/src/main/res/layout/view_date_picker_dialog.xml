@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/graytuo"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/title"
+            android:layout_gravity="center_horizontal"
+            android:text="入学年份"
+            android:textStyle="bold"
+            android:textColor="#ff000000"
+            android:textSize="16sp"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_19"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <DatePicker
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_below="@id/title"
+            android:id="@+id/datePicker"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+
+        <RelativeLayout
+            android:id="@+id/buttonGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datePicker"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/dp_18"
+            android:layout_marginTop="@dimen/dp_18"
+            android:layout_marginEnd="@dimen/dp_18"
+            android:layout_marginBottom="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/cancelButton"
+                android:layout_width="@dimen/dp_114"
+                android:layout_height="@dimen/dp_30"
+                android:background="@drawable/edittext_radio"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/okButton"
+                android:layout_width="@dimen/dp_114"
+                android:layout_height="@dimen/dp_30"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/dp_10"
+                android:background="@drawable/shape_blue_shape8"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+</RelativeLayout>

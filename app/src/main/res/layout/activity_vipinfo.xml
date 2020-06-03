@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.vip.VipinfoActivity">
+    <include
+        android:id="@+id/tool"
+        layout="@layout/public_title_bar" />
+
+    <com.yingzhiyun.yingquxue.units.VerticalSwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_below="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <View
+                    android:background="#F1F1F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:background="@drawable/kafei_radio20">
+
+                    <ImageView
+                        android:id="@+id/course_teacherhead"
+                        android:layout_width="@dimen/dp_36"
+                        android:layout_height="@dimen/dp_36"
+                        android:layout_marginStart="@dimen/dp_20"
+
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/teacher_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_20"
+
+                        android:layout_toEndOf="@+id/course_teacherhead"
+                        android:text="我是老师名字"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/teacherLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/teacher_name"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_toEndOf="@+id/course_teacherhead"
+                        android:text="尊享特权"
+                        android:textColor="#595353"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="@dimen/dp_10"
+                        android:text="尊享VIP特权"
+                        android:textColor="#ffffffff"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/record_vip"
+                        android:layout_width="@dimen/dp_115"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_below="@+id/teacherLabel"
+                        android:layout_margin="@dimen/dp_20"
+                        android:background="@drawable/black_radio_20"
+                        android:gravity="center"
+                        android:text="立即开通"
+                        android:textColor="#ffe8cc97"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_10"
+
+                    android:layout_marginEnd="@dimen/dp_10"
+                    app:cardCornerRadius="@dimen/dp_6"
+                    app:cardElevation="@dimen/dp_2"
+                    app:cardPreventCornerOverlap="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_type"
+
+                        android:background="@drawable/white_shawd_3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/dp_10"
+
+                            android:text="会员尊享特权"
+                            android:textColor="#ff000000"
+                            android:textSize="20sp"
+                            />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recy_vipgongn"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:layout_marginBottom="@dimen/dp_30"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+
+                        </androidx.recyclerview.widget.RecyclerView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/re_video"
+                    android:layout_marginTop="@dimen/dp_15"
+
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:id="@+id/modle_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VIP视频课程"
+                        android:textColor="#ff000000"
+                        android:textSize="20sp"
+                        />
+                    <TextView
+                        android:id="@+id/course_more"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:layout_height="wrap_content"
+                        android:text="更多"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:drawableRight="@drawable/chengse_right"
+                        android:textColor="#ff985b19"
+                        android:textSize="12sp"
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_below="@+id/modle_title"
+                        android:layout_width="match_parent"
+                        android:id="@+id/recy_kcheng"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                    <View
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_below="@+id/recy_kcheng"
+                        android:background="#F1F1F1"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/re_word"
+                    android:layout_marginTop="@dimen/dp_15"
+
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:id="@+id/modle_title_teacher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="专享试卷"
+                        android:textColor="#ff000000"
+                        android:textSize="20sp"
+                        />
+                    <TextView
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:layout_height="wrap_content"
+                        android:text="更多"
+                        android:id="@+id/word_more"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:drawableRight="@drawable/chengse_right"
+                        android:textColor="#ff985b19"
+                        android:textSize="12sp"
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginStart="@dimen/dp_10"
+
+                        android:layout_below="@+id/modle_title_teacher"
+                        android:layout_width="match_parent"
+                        android:id="@+id/recy_school_pager"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                    <View
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_below="@+id/recy_school_pager"
+                        android:background="#F1F1F1"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/re_test"
+                    android:layout_marginTop="@dimen/dp_15"
+
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:id="@+id/modle_testpager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="模拟试题"
+                        android:textColor="#ff000000"
+                        android:textSize="20sp"
+                        />
+                    <TextView
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:layout_height="wrap_content"
+                        android:text="更多"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:drawableRight="@drawable/chengse_right"
+                        android:textColor="#ff985b19"
+                        android:textSize="12sp"
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_below="@+id/modle_testpager"
+                        android:layout_width="match_parent"
+                        android:id="@+id/recy_testpager"
+                        android:layout_marginTop="@dimen/dp_10"
+
+                        android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                    <View
+
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_below="@+id/recy_testpager"
+                        android:background="#F1F1F1"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="特权说明"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp"
+                        />
+
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:lineSpacingExtra="@dimen/dp_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shuoming"
+                        android:textColor="#ff000000"
+                        android:textSize="12sp"
+                        />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="购买记录"
+                        android:textColor="#ff000000"
+                        android:textSize="16sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/item_jiantou"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+
+                        android:src="@mipmap/righttou"
+                        android:layout_width="@dimen/dp_14"
+                        android:layout_height="@dimen/dp_14" />
+                    <View
+
+                        android:background="#C8C7CC"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0_1"
+                        />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/go_ytouup"
+                    android:layout_margin="@dimen/dp_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:text="立即开通"
+                    android:background="@drawable/juse_radio25"
+                    android:gravity="center"
+                    android:textColor="#595353"
+                    android:textSize="@dimen/sp_18"
+                    />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.yingzhiyun.yingquxue.units.VerticalSwipeRefreshLayout>
+
+</RelativeLayout>

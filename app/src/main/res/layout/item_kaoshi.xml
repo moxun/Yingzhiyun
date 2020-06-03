@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/back_whitr"
+    android:layout_marginStart="@dimen/dp_10"
+    android:layout_marginEnd="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_8"
+    android:layout_height="@dimen/dp_60">
+
+
+    <TextView
+        android:id="@+id/item_kaoshi_title"
+        android:layout_marginTop="@dimen/sp_14"
+        android:layout_marginStart="@dimen/dp_22"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="河南省八市联考"
+        android:textColor="#ff333333"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_marginStart="@dimen/dp_22"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_below="@+id/item_kaoshi_title"
+        android:layout_width="62dp"
+        android:layout_height="14dp"
+        android:text="2018-06-06"
+        android:textColor="#ff999999"
+        android:textSize="10sp"
+        />
+
+    <ImageView
+        android:id="@+id/item_jiantou"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/righttou"
+        android:layout_width="@dimen/sp_14"
+        android:layout_height="@dimen/sp_14" />
+</RelativeLayout>

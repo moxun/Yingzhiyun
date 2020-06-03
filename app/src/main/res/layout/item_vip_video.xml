@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_230"
+    android:layout_marginEnd="@dimen/dp_10"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="6dp"
+        android:id="@+id/card"
+        app:cardElevation="@dimen/dp_0"
+
+        android:layout_width="@dimen/dp_230"
+        android:layout_height="@dimen/dp_110">
+
+        <ImageView
+            android:id="@+id/item_vipvideo_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_below="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数学"
+
+        android:id="@+id/item_vipcourese_title"
+        android:layout_marginTop="@dimen/dp_7"
+        android:textColor="#ff000000"
+        android:textSize="14sp"
+        />
+    <TextView
+
+        android:layout_marginTop="@dimen/dp_7"
+        android:layout_below="@+id/item_vipcourese_title"
+        android:id="@+id/item_vipcoure_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIP专享"
+        android:textColor="#985B19"
+        android:textSize="14sp"
+        />
+</RelativeLayout>

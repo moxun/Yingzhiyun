@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_11"
+        android:layout_below="@+id/score_tab"
+        android:id="@+id/rela_back"
+        android:background="@mipmap/record_back"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/dp_352"
+        android:layout_height="@dimen/dp_98">
+        <TextView
+            android:id="@+id/total_size"
+            android:layout_marginTop="@dimen/dp_31"
+            android:layout_marginStart="@dimen/dp_44"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/dp_51"
+            android:layout_marginStart="@dimen/dp_44"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:text="@string/lianxi_size"
+            android:textColor="#ff999999"
+            android:textSize="@dimen/sp_10"
+            />
+        <ImageView
+            android:src="@mipmap/icon_zhi"
+            android:layout_marginTop="@dimen/dp_32"
+            android:layout_marginStart="@dimen/dp_114"
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="@dimen/dp_30" />
+        <TextView
+            android:id="@+id/totalright_size"
+            android:layout_marginTop="@dimen/dp_31"
+            android:layout_marginStart="@dimen/dp_156"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/dp_51"
+            android:layout_marginStart="@dimen/dp_156"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:text="@string/right_size"
+            android:textColor="#ff999999"
+            android:textSize="@dimen/sp_10"
+            />
+        <ImageView
+            android:src="@mipmap/icon_zhi"
+            android:layout_marginTop="@dimen/dp_32"
+            android:layout_marginStart="@dimen/dp_238"
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="@dimen/dp_30" />
+        <TextView
+            android:id="@+id/time"
+            android:layout_marginTop="@dimen/dp_31"
+            android:layout_marginStart="@dimen/dp_267"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="0时0分"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/dp_51"
+            android:layout_marginStart="@dimen/dp_267"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:text="@string/lianxi_time"
+            android:textColor="#ff999999"
+            android:textSize="@dimen/sp_10"
+            />
+
+    </RelativeLayout>
+
+    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/recy_tirecord"
+
+        android:layout_below="@+id/rela_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView>
+    <LinearLayout
+        android:layout_below="@+id/rela_back"
+        android:visibility="gone"
+        android:id="@+id/linear_modle"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/dp_166"
+        android:layout_height="@dimen/dp_180" >
+        <ImageView
+            android:src="@mipmap/back_nomodle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_144" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="暂无数据"
+            android:textColor="#ff999999"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+</RelativeLayout>
+

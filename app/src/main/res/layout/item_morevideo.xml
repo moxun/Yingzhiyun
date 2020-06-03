@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginStart="@dimen/dp_10"
+    android:layout_marginEnd="@dimen/dp_2"
+    android:layout_marginTop="@dimen/dp_10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+
+    android:layout_height="@dimen/dp_115">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_95"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="6dp"
+        app:elevation="3dp"
+        android:layout_margin="3dp">
+        <ImageView
+            android:id="@+id/iv_clinic_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_95"
+
+            android:src="@mipmap/tiku"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_11"
+        android:layout_marginStart="@dimen/dp_20"
+        android:id="@+id/recy_video_title"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/card"
+
+
+        android:text="全国各地2018-2019试题..."
+        android:textColor="#ff666666"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/recy_video_duan"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_toEndOf="@+id/card"
+        android:text="@string/classfiy"
+        android:textColor="#ff1091e9"
+        android:textSize="@dimen/sp_15" />
+
+
+    <TextView
+
+        android:id="@+id/read_value"
+        android:drawablePadding="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_1"
+
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="365"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffcccccc"
+        android:textSize="@dimen/sp_15"
+        />
+
+</RelativeLayout>

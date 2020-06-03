@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp_26"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        android:drawablePadding="@dimen/dp_15"
+        android:drawableStart="@mipmap/icon_yuandian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="课程简介"
+        android:textColor="#ff000000"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/sp_12"
+        android:layout_marginStart="@dimen/dp_15"
+        android:id="@+id/content"
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="课程是指学校学生所应学习的学科总和及其进程与安排。课程是对教育的目标、教学内容、教学活动方式的规划和设计，是教学计划、教学大纲等诸多方面实施过程的总和。广义的课程是指学校为实现培养目标而选择的教育内容及其进程的总和，它包括学校老师所教授的各门学科和有目的、有计划的教育活动。狭义的课程是指某一门学科"
+        android:textColor="#ff666666"
+        android:textSize="12sp"
+        />
+</RelativeLayout>

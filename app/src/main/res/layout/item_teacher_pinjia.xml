@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp_15"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/re_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       >
+
+        <ImageView
+            android:id="@+id/course_teacherhead"
+
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_36"
+
+            android:layout_marginTop="@dimen/dp_16"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/teacher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/sp_15"
+            android:layout_toEndOf="@+id/course_teacherhead"
+            android:text="我是老师名字"
+            android:textColor="#000000"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/teacherLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teacher_name"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_toEndOf="@+id/course_teacherhead"
+            android:text="授课老师"
+            android:textColor="#ff999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/teacher_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp_25"
+            android:text="2020-02-15"
+            android:textColor="#ff999999"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="#ff000000"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/seemore"
+
+        android:layout_below="@+id/re_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_answer"
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="vertical"
+        android:layout_below="@+id/seemore"
+        android:background="@drawable/gray_radio_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="老师回复:"
+            android:textColor="#ff000000"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/teacher_answer"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="老师回复：老师永远记得这个暑假和你的相遇 秋季加油，期待你的上岸秋季加油，期待你的上岸"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+</RelativeLayout>

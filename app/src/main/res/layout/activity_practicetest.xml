@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ll_tab"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_senior"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_22"
+            android:text="@string/senior"
+            android:gravity="center"
+            android:background="@drawable/chooseleft"
+            android:textColor="#ffffffff"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/tv_junior"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_22"
+            android:text="@string/junior"
+            android:gravity="center"
+            android:background="@drawable/righttuoyuan"
+            android:textColor="#ff1091e9"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_stage"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_40"
+        android:text="高中"
+        android:textColor="#ff000000"
+        android:textSize="@dimen/sp_12"
+        />
+    <ImageView
+        android:layout_marginTop="@dimen/dp_17"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/sp_10"
+        android:id="@+id/choose_stage"
+        android:src="@mipmap/blackdetail"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:alpha="0.5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_below="@+id/ll_tab"
+        android:background="#CCCCCC"
+        android:id="@+id/fen"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_1"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/score_tab"
+        android:layout_below="@+id/fen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:tabBackground="@drawable/tabselector"
+
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#000000"
+        app:tabTextColor="#666666">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view"
+        android:layout_below="@+id/score_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:clipChildren="false">
+
+    </androidx.viewpager.widget.ViewPager>
+</RelativeLayout>

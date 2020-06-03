@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_ra"
+    android:background="@color/white"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/tool_relative"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50">
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@mipmap/leftdetail"/>
+            <TextView
+                android:textIsSelectable="true"
+                android:id="@+id/tool_title"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月考套卷"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/sp_16"
+                />
+
+            <TextView
+                android:id="@+id/text_stage"
+                android:layout_marginEnd="@dimen/dp_30"
+               android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/sp_14"
+                />
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:id="@+id/choose_stage"
+                android:src="@mipmap/blackdetail"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginEnd="@dimen/dp_20"
+                android:visibility="gone"
+                android:id="@+id/iv_search"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/search" />
+        </RelativeLayout>
+
+
+    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:layout_below="@+id/tool_relative"
+        android:id="@+id/recy_tsetpagper"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView>
+
+    <LinearLayout
+
+        android:id="@+id/linear_modle"
+        android:layout_width="@dimen/dp_166"
+        android:layout_height="@dimen/dp_180"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_144"
+            android:src="@mipmap/back_nomodle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:text="暂无数据"
+            android:textColor="#ff999999"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!--使背景变灰-->
+    <View
+        android:id="@+id/main_darkview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_bg"
+        android:visibility="gone"
+        />
+</RelativeLayout>

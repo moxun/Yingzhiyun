@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_100"
+    android:layout_marginTop="@dimen/sp_10"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginEnd="@dimen/dp_10"
+    android:background="@color/ColorF1F1F1"
+    android:layout_height="@dimen/dp_100"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="6dp"
+            app:elevation="3dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/item_mineworks"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/delete"
+                    android:src="@mipmap/icon_delimage"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_18" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

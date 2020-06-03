@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <com.yingzhiyun.yingquxue.units.VerticalSwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:id="@+id/tool_relative"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40">
+                        <ImageView
+                            android:id="@+id/finish"
+                            android:src="@mipmap/leftdetail"
+                            android:layout_marginStart="@dimen/dp_20"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_width="@dimen/dp_25"
+                            android:layout_height="@dimen/dp_15" />
+                        <LinearLayout
+
+                            android:id="@+id/serach_Lin"
+                            android:layout_width="@dimen/dp_250"
+                            android:layout_height="@dimen/dp_28"
+
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="@dimen/dp_47"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/shape_corner20_gray"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+
+                            android:orientation="horizontal">
+
+                            <ImageView
+
+                                android:layout_width="@dimen/dp_15"
+                                android:layout_height="@dimen/dp_15"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:src="@mipmap/search" />
+
+                            <EditText
+                                android:textCursorDrawable="@drawable/edittext_guangbiao"
+                                android:inputType="text"
+                                android:singleLine="true"
+                                android:imeOptions="actionSearch"
+                                android:id="@+id/tv_search"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:hint="请输入搜索内容"
+                                android:paddingLeft="@dimen/dp_5"
+                                android:textSize="@dimen/sp_12" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/text_stage"
+                            android:layout_marginStart="@dimen/dp_312"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="高中"
+                            android:textColor="#ff000000"
+                            android:textSize="@dimen/sp_12"
+                            />
+                        <ImageView
+                            android:layout_marginTop="@dimen/dp_17"
+                            android:layout_marginStart="@dimen/dp_338"
+                            android:id="@+id/choose_stage"
+                            android:src="@mipmap/blackdetail"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginEnd="@dimen/dp_20"
+                            android:visibility="gone"
+                            android:id="@+id/iv_search"
+                            android:layout_width="@dimen/dp_24"
+                            android:layout_height="@dimen/dp_24"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/search" />
+                    </RelativeLayout>
+                <View
+
+                    android:id="@+id/fen"
+                    android:alpha="0.5"
+                    android:background="#cccccc"
+                    android:layout_below="@+id/tool_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"/>
+                
+                <LinearLayout
+                    android:id="@+id/choose"
+                    android:layout_below="@+id/fen"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_36">
+                    <LinearLayout
+                        android:id="@+id/linear_grade"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp_36">
+                        <TextView
+                            android:layout_marginStart="@dimen/dp_60"
+                            android:layout_gravity="center"
+                            android:id="@+id/text_grade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="全部年级"
+                            android:textColor="#ff000000"
+                            android:textSize="@dimen/sp_14"
+                            />
+                        <ImageView
+                            android:layout_marginLeft="@dimen/dp_3"
+                            android:id="@+id/choose_grade"
+                            android:src="@mipmap/blackdetail"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_subject"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp_36">
+                        <TextView
+                            android:layout_marginStart="@dimen/dp_60"
+                            android:layout_gravity="center"
+                            android:id="@+id/text_subject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="全部科目"
+                            android:textColor="#ff000000"
+                            android:textSize="@dimen/sp_14"
+                            />
+                        <ImageView
+                            android:layout_marginLeft="@dimen/dp_3"
+                            android:id="@+id/choose_subject"
+                            android:src="@mipmap/blackdetail"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+
+                    android:layout_below="@+id/choose"
+                    android:id="@+id/main_div_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0_1"
+                    android:background="#cccccc"/>
+                <!--使背景变灰-->
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:layout_below="@+id/choose"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent">
+
+                    <!-- your views...-->
+                    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+                        android:id="@+id/recy_ziyuan"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/linear_modle"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true"
+                        android:layout_width="@dimen/dp_166"
+                        android:layout_height="@dimen/dp_180" >
+                        <ImageView
+                            android:src="@mipmap/back_nomodle"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_144" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:text="暂无数据"
+                            android:textColor="#ff999999"
+                            android:textSize="16sp"
+                            />
+                    </LinearLayout>
+
+
+                    <!--使背景变灰-->
+                    <View
+                        android:id="@+id/main_darkview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/dark_bg"
+                        android:visibility="gone"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+    </com.yingzhiyun.yingquxue.units.VerticalSwipeRefreshLayout>
+
+</RelativeLayout>

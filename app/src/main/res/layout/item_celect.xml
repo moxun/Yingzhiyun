@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp_15"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/xuanxiang"
+            android:background="@drawable/bu_select"
+            android:gravity="center"
+            android:textSize="@dimen/sp_16"
+            android:text="A"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:textColor="@color/mainColor"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35" />
+
+    <com.daquexian.flexiblerichtextview.FlexibleRichTextView
+        android:id="@+id/content"
+
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/xuanxiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

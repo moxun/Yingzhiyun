@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@color/white"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_height="@dimen/dp_20">
+
+    <TextView
+        android:background="@drawable/bluetuo"
+        android:id="@+id/item_lable_title"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_3"
+        android:paddingRight="@dimen/dp_3"
+        android:text="试题试卷"
+        android:textColor="#999999"
+        android:textSize="@dimen/sp_10" />
+</RelativeLayout>

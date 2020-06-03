@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_4"
+       android:src="@mipmap/icon_fanzhuan"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30" />
+</LinearLayout>

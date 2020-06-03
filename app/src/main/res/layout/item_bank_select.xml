@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_40"
+    android:layout_height="@dimen/dp_40">
+
+    <TextView
+        android:id="@+id/item_tx_bank"
+        android:gravity="center"
+        android:background="@mipmap/icon_wrong"
+        android:layout_width="@dimen/dp_38"
+        android:layout_height="@dimen/dp_38"
+        android:text="1"
+        android:textColor="#ffffffff"
+        android:textSize="18sp"
+        />
+</RelativeLayout>

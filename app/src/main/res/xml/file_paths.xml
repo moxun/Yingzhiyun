@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path path="Android/data/com.yingzhiyun.yingquxue/" name="files_root" />
+    <external-path path="." name="ccb_xls" />
+    <external-path name="external_files" path="."/>
+</paths>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginStart="@dimen/dp_20"
+        android:id="@+id/title"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_width="100dp"
+        android:layout_height="17dp"
+        android:text="高考作文高分技巧"
+        android:textColor="#ff000000"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:layout_marginStart="@dimen/dp_42"
+        android:id="@+id/time"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="教师资格证编号:489491654984"
+        android:textColor="#ff666666"
+        android:textSize="@dimen/sp_10"
+        />
+
+    <View
+
+        android:layout_marginTop="@dimen/sp_14"
+        android:id="@+id/fen"
+        android:alpha="0.5"
+        android:background="#cccccc"
+        android:layout_below="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"/>
+
+</RelativeLayout>

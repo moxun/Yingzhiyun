@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.conversion.ConversionActivity">
+
+
+    <include layout="@layout/public_title_bar"/>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/rukou"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_entrance"
+            android:layout_marginEnd="@dimen/dp_13"
+            android:layout_marginStart="@dimen/dp_13"
+            android:layout_marginTop="@dimen/dp_35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:id="@+id/re_list"
+            android:visibility="gone"
+
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_below="@+id/rukou"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程列表"
+
+                android:textColor="#ff000000"
+                android:textSize="18sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_margin="@dimen/dp_20"
+                android:id="@+id/course_list"
+                android:layout_below="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+
+            android:id="@+id/linear_modle"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/dp_166"
+            android:layout_height="@dimen/dp_180" >
+            <ImageView
+                android:src="@mipmap/back_nomodle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_144" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:text="暂无兑换课程"
+                android:textColor="#ff999999"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+
+            android:layout_marginEnd="@dimen/dp_20"
+            android:id="@+id/teacher_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>

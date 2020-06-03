@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/re_update"
+        android:background="@drawable/shape_white20"
+        android:layout_width="@dimen/dp_245"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="发现新版本，快升级吧！"
+            android:textColor="#ff000000"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_11"
+            android:layout_below="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.这个app无/u3000敌"
+            android:textColor="#ff666666"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/btn_login"
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_35"
+            android:layout_below="@id/content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_25"
+            android:background="@drawable/icon_blue_back_20"
+            android:gravity="center"
+            android:text="立即升级"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+
+
+        <RelativeLayout
+            android:background="@drawable/icon_blue_back_20"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:id="@+id/pogger_re"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp_25"
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_35"
+            android:layout_below="@id/content"
+            android:layout_centerHorizontal="true"
+
+        >
+
+            <ProgressBar
+                android:layout_below="@+id/progress_tltle"
+                android:progress="50"
+                android:max="100"
+                android:id="@+id/progressbar_pingjun"
+                android:progressDrawable="@drawable/update_back"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="@dimen/dp_35"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+            <TextView
+                android:id="@+id/text_xiaze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40%"
+                android:layout_centerInParent="true"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/re_update"
+        android:id="@+id/image_x"
+        android:layout_width="@dimen/dp_28"
+        android:layout_height="@dimen/dp_28"
+        android:background="@drawable/image_x"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_gravity="center"/>
+</RelativeLayout>

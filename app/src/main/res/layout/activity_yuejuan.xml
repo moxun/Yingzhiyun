@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    >
+    <TextView
+        android:id="@+id/yiyue"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+
+        android:textColor="#ff1091e9"
+        android:textSize="16sp"
+        />
+
+    <ImageView
+        android:id="@+id/yuetika"
+        android:layout_marginEnd="@dimen/dp_64"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/icon_yuetika"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30" />
+
+    <ImageView
+        android:id="@+id/finish"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/icon_fanhui"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30" />
+
+    <ImageView
+        android:id="@+id/shijuan"
+        android:layout_centerInParent="true"
+        android:scaleType="matrix"
+        android:src="@mipmap/banckoo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_400" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/keyword"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="@dimen/dp_31"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/keyword_heng"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dp_31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:textColor="#ff1091e9"
+        android:textSize="17sp"
+        android:text="删除"
+        android:id="@+id/delete"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/dp_17"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_54"
+
+        android:layout_toRightOf="@+id/keyword"
+        android:background="@drawable/keywordback"
+        android:layout_width="@dimen/dp_68"
+        android:layout_height="@dimen/dp_30" />
+    <TextView
+        android:textColor="#ff1091e9"
+        android:textSize="17sp"
+        android:text="确认"
+
+        android:id="@+id/ok"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/dp_17"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_toRightOf="@+id/keyword"
+        android:background="@drawable/keywordback"
+        android:layout_width="@dimen/dp_68"
+        android:layout_height="@dimen/dp_30" />
+
+    <EditText
+        android:background="@null"
+        android:id="@+id/chengji"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#ffdb253b"
+        android:textSize="50sp"
+        />
+</RelativeLayout>

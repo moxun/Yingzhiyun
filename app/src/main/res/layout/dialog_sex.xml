@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_245"
+    android:layout_height="@dimen/dp_171"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/graytuo"
+    android:orientation="vertical">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title"
+        android:layout_gravity="center_horizontal"
+        android:text="选择性别"
+        android:textStyle="bold"
+        android:textColor="#ff000000"
+        android:textSize="16sp"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_19"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_nan"
+        android:gravity="center"
+        android:background="@drawable/edittext_radio"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_34"
+        android:text="男"
+        android:textColor="#ff000000"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/text_nv"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:background="@drawable/edittext_radio"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_below="@id/text_nan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_34"
+        android:text="女"
+        android:textColor="#ff000000"
+        android:textSize="14sp"
+        />
+</RelativeLayout>

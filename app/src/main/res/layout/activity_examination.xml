@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <include layout="@layout/public_title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_marginStart="@dimen/dp_28"
+            android:layout_marginTop="@dimen/dp_70"
+            android:src="@mipmap/icon_queryscore"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20" />
+        <EditText
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_toRightOf="@+id/icon"
+
+            android:id="@+id/ed_username"
+            android:layout_width="match_parent"
+            android:textCursorDrawable="@drawable/edittext_guangbiao"
+            android:background="@null"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tel_register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_67"
+            android:hint="@string/zhanghao_hint" />
+
+        <ImageView
+            android:layout_below="@+id/icon"
+            android:layout_marginStart="@dimen/dp_28"
+            android:layout_marginTop="@dimen/dp_33"
+            android:src="@mipmap/icon_queryscore"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20" />
+        <EditText
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_toRightOf="@+id/icon"
+            android:inputType="textPassword"
+            android:id="@+id/ed_pass"
+            android:layout_width="match_parent"
+            android:textCursorDrawable="@drawable/edittext_guangbiao"
+            android:background="@null"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_30"
+            android:hint="@string/password" />
+        <View
+            android:id="@+id/fen"
+            android:layout_marginStart="@dimen/dp_20"
+            android:background="#CCCCCC"
+            android:layout_marginTop="@dimen/dp_7"
+            android:layout_below="@+id/icon"
+            android:layout_width="@dimen/dp_334"
+            android:layout_height="1dp"/>
+        <View
+            android:id="@+id/fen1"
+            android:layout_marginStart="@dimen/dp_20"
+            android:background="#CCCCCC"
+            android:layout_marginTop="@dimen/dp_7"
+            android:layout_below="@+id/ed_pass"
+            android:layout_width="@dimen/dp_334"
+            android:layout_height="1dp"/>
+
+        <Button
+
+            android:id="@+id/btn_login"
+            android:layout_width="@dimen/dp_335"
+            android:layout_height="@dimen/dp_42"
+            android:layout_below="@id/ed_pass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_50"
+            android:background="@mipmap/login_button"
+            android:gravity="center"
+            android:text="进入"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

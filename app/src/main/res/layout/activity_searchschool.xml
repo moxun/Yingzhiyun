@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/tool_relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+
+        <ImageView
+            android:id="@+id/finish"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_15"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_20"
+            android:src="@mipmap/leftdetail" />
+
+        <LinearLayout
+
+            android:id="@+id/serach_Lin"
+            android:layout_width="@dimen/dp_265"
+            android:layout_height="@dimen/dp_28"
+
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dp_47"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/shape_corner20_gray"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_15"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@mipmap/search" />
+
+            <EditText
+                android:textCursorDrawable="@drawable/edittext_guangbiao"
+                android:inputType="text"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:id="@+id/tv_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入学校名称"
+                android:paddingLeft="@dimen/dp_5"
+                android:textSize="@dimen/sp_12" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:text="取消"
+            android:textColor="#ff666666"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/jieguo"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_below="@+id/tool_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:text="搜索结果"
+        android:textColor="#ff000000"
+        android:textSize="16sp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy_school"
+        android:layout_below="@+id/jieguo"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

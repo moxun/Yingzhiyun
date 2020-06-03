@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_marginTop="@dimen/dp_5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+
+    android:layout_height="@dimen/dp_126">
+
+
+        <ImageView
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:id="@+id/iv_clinic_avatar"
+            android:layout_width="@dimen/dp_68"
+            android:layout_height="86dp"
+
+            android:src="@mipmap/tiku"
+            android:scaleType="fitXY"
+            />
+
+
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:id="@+id/recy_video_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_11"
+        android:layout_toRightOf="@+id/iv_clinic_avatar"
+
+
+        android:text="全国各地2018-2019试题..."
+        android:textColor="#ff000000"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:id="@+id/recy_video_duan"
+        android:textColor="#ff999999"
+        android:textSize="12sp"
+        android:layout_toEndOf="@+id/iv_clinic_avatar"
+        android:text="@string/classfiy"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+    <TextView
+        android:id="@+id/read_value"
+        android:text="15"
+
+        android:drawableStart="@mipmap/eyes"
+        android:drawablePadding="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_alignParentBottom="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_80"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ff999999"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/follow"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/shoucang"
+        android:layout_toEndOf="@+id/zhixian"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_25"
+        android:text="收藏"
+        android:layout_marginEnd="@dimen/sp_10"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/sp_10"
+        />
+</RelativeLayout>

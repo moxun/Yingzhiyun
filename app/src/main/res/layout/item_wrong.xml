@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/dp_12"
+    android:id="@+id/rela"
+    android:layout_height="@dimen/dp_250">
+
+
+
+    <com.daquexian.flexiblerichtextview.FlexibleRichTextView
+
+        android:id="@+id/item_wrong_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.daquexian.flexiblerichtextview.FlexibleRichTextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_wrong_recy"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_below="@+id/item_wrong_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+
+        android:id="@+id/item_wrong_time"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="2019-02-02"
+        android:textColor="@color/Color999999"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/lul"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+</RelativeLayout>

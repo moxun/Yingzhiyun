@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_18"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meetsl.scardview.SCardView
+        android:layout_width="@dimen/dp_355"
+        android:layout_height="@dimen/dp_97"
+
+
+        android:alpha="0.6"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="@dimen/dp_3"
+        app:cardLightDirection="top">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imagehead"
+                android:layout_marginTop="@dimen/dp_11"
+                android:layout_marginStart="@dimen/dp_18"
+                android:src="@mipmap/icon"
+                android:layout_width="@dimen/dp_38"
+                android:layout_height="@dimen/dp_38" />
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_marginTop="@dimen/dp_22"
+                android:layout_marginStart="@dimen/dp_67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1354*****"
+                android:textColor="#ff666666"
+                android:textSize="12sp"
+                />
+
+            <com.daquexian.flexiblerichtextview.FlexibleRichTextView
+                android:id="@+id/question_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginStart="@dimen/dp_18"
+                android:layout_below="@id/imagehead"
+                android:layout_width="160dp"
+                android:layout_height="17dp"
+                android:text="请问一下一加一等于多少呢？"
+                android:textColor="#ff999999"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/question_time"
+                android:layout_marginEnd="@dimen/dp_4"
+                android:layout_marginBottom="9dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="75dp"
+                android:layout_height="17dp"
+                android:text="2019-10-11"
+                android:textColor="#ff999999"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+
+    </com.meetsl.scardview.SCardView>
+</RelativeLayout>

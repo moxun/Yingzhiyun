@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:background="@color/ColorF1F1F1"
+        android:paddingStart="@dimen/dp_20"
+        android:gravity="center_vertical"
+        android:id="@+id/title"
+        android:text="初中"
+        android:textColor="#ff000000"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_38" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/title"
+        android:id="@+id/recy_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

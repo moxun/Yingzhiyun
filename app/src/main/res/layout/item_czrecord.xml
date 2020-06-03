@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_marginEnd="@dimen/dp_60"
+        android:id="@+id/item_record_tltle"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="趣学币充值"
+        android:textColor="#ff000000"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/item_record_time"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_below="@+id/item_record_tltle"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="2019-10-11  09:09"
+        android:textColor="#ff999999"
+        android:textSize="14sp"
+        />
+    <View
+        android:id="@+id/fen"
+        android:alpha="0.5"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="#cccccc"
+      android:layout_below="@+id/item_record_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"/>
+
+    <TextView
+        android:id="@+id/item_record_jieguo"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="成功"
+        android:textColor="#ff1091e9"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_alignParentEnd="true"
+        android:id="@+id/item_record_mingxi"
+        android:layout_below="@+id/item_record_jieguo"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_13"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="+10趣学币"
+        android:textColor="#ffdb253b"
+        android:textSize="16sp"
+        />
+</RelativeLayout>

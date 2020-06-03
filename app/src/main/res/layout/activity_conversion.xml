@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.conversion.ConversionActivity">
+
+
+    <include layout="@layout/public_title_bar"/>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_input"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_35"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <EditText
+                android:id="@+id/edit_conpon"
+                android:textSize="@dimen/dp_14"
+                android:hint="输入您的兑换券"
+                android:textColor="#000000"
+               android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_20"
+                android:background="@drawable/gray_duihuan"
+                android:layout_weight="8"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/duihuan"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:background="@drawable/blue_duihuan"
+                android:layout_height="match_parent"
+                android:text="兑换"
+                android:textColor="#ffffffff"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/re_list"
+            android:layout_marginTop="@dimen/dp_25"
+            android:layout_below="@+id/ll_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_margin="@dimen/dp_20"
+                android:id="@+id/course_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+                android:id="@+id/course_size"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_below="@id/course_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="#ffdb253b"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/blue_radio_20"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/dp_20"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="确认兑换"
+                android:id="@+id/bt_sure"
+                android:textColor="#ffffffff"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

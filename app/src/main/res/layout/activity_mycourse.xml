@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+
+            <RelativeLayout
+                android:id="@+id/tool_relative"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40">
+
+                <ImageView
+                    android:id="@+id/finish"
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="@dimen/dp_15"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:src="@mipmap/leftdetail" />
+
+                <TextView
+                    android:id="@+id/tool_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="@string/mycourse"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/sp_16" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/fen"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_below="@+id/tool_relative"
+                android:alpha="0.5"
+                android:background="#cccccc" />
+    <RelativeLayout
+        android:id="@+id/recy_rea"
+        android:layout_below="@+id/fen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/begun"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_23"
+            android:text="已开始课程"
+            android:textColor="#ff000000"
+            android:textSize="18sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recy_intera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/begun"
+            android:layout_marginStart="@dimen/sp_10"
+            android:layout_marginEnd="@dimen/sp_10">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/notbegun"
+            android:layout_marginTop="@dimen/dp_23"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_below="@+id/recy_intera"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="报名中课程"
+            android:textColor="#ff000000"
+            android:textSize="18sp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginStart="@dimen/sp_10"
+            android:layout_marginEnd="@dimen/sp_10"
+            android:id="@+id/recy_notbegan"
+            android:layout_below="@+id/notbegun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linear_modle"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/dp_166"
+                android:layout_height="@dimen/dp_180" >
+                <ImageView
+                    android:src="@mipmap/back_nomodle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_144" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:text="暂无数据"
+                    android:textColor="#ff999999"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+</RelativeLayout>

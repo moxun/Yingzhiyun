@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text_type"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/shape_white20"
+            android:textSize="@dimen/sp_12"
+            android:text="错题"
+            android:textColor="#72DCB8"
+            android:gravity="center"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_20" />
+
+        <TextView
+            android:id="@+id/wrong_time"
+            android:text="2019"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/Color999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+
+            android:id="@+id/fen"
+            android:alpha="0.5"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="#cccccc"
+            android:layout_below="@+id/wrong_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"/>
+
+        <com.daquexian.flexiblerichtextview.FlexibleRichTextView
+            android:id="@+id/cloose_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fen"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            android:text="@string/search"
+            android:textSize="@dimen/sp_13" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cloose_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/re_Choose"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recy_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <View
+                    android:id="@+id/fenge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0_5"
+                    android:layout_below="@+id/recy_select"
+                    android:layout_marginTop="@dimen/sp_20"
+                    android:alpha="0.5"
+                    android:background="@color/Color999999" />
+
+                <TextView
+                    android:id="@+id/huida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fenge"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:text="回答错误"
+                    android:textColor="@color/colorRed" />
+
+                <com.daquexian.flexiblerichtextview.FlexibleRichTextView
+                    android:id="@+id/right_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/huida"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="正确答案："
+                    android:textColor="@color/Color666666" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_tiankong"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_20"
+
+                    android:text="答案"
+                    android:textColor="@color/Color666666" />
+
+                <com.daquexian.flexiblerichtextview.FlexibleRichTextView
+                    android:id="@+id/tv_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/answer"
+                    android:layout_marginStart="@dimen/dp_20"
+
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:textColor="@color/Color666666" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="解析" />
+
+            <com.daquexian.flexiblerichtextview.FlexibleRichTextView
+                android:id="@+id/analysis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/sp_15"
+                android:textColor="@color/Color333333" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

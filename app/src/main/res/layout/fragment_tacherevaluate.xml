@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:star="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.zhibo.TacherevaluateFragment">
+
+    <TextView
+        android:id="@+id/all_erevalute"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="共1500条评价"
+        android:textColor="#ff333333"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/fenhsu"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.0分"
+        android:textColor="#ff333333"
+        android:textSize="15sp"
+        />
+
+    <com.yingzhiyun.yingquxue.units.StarView
+        android:id="@+id/recy_xing"
+        android:layout_toStartOf="@+id/fenhsu"
+        android:orientation="horizontal"
+        star:childWidth="15sp"
+        star:precision="whole"
+        star:counterAll="5"
+        star:seletedable="true"
+        star:defoultImage="@drawable/icon_buxihuan"
+        star:hightImage="@drawable/icon_xihuan"
+        android:layout_alignTop="@+id/fenhsu"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="20sp">
+
+    </com.yingzhiyun.yingquxue.units.StarView>
+
+    <View
+        android:id="@+id/fen"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_below="@+id/all_erevalute"
+        android:background="#F1F1F1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"/>
+    <TextView
+        android:id="@+id/pinglun"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_below="@id/fen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评论"
+        android:textColor="#ff000000"
+        android:textSize="18sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy_pinglun"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_below="@+id/pinglun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

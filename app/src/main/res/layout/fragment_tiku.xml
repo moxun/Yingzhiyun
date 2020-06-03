@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_rela"
+    android:layout_height="match_parent"
+    android:background="#F6FBFF">
+    <!--<TextView-->
+        <!--android:background="@color/white"-->
+        <!--android:id="@+id/tool_title"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="#ff000000"-->
+        <!--android:textSize="16sp"-->
+        <!--android:text="@string/tiku"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dp_40" />-->
+    <!---->
+    <!--<ImageView-->
+        <!--android:id="@+id/blue"-->
+        <!--android:layout_below="@+id/tool_title"-->
+        <!--android:src="@mipmap/gradientblue"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dp_90" />-->
+    <!--<TextView-->
+        <!--android:layout_marginStart="@dimen/dp_20"-->
+        <!--android:layout_marginTop="@dimen/dp_14"-->
+        <!--android:layout_below="@id/tool_title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="当前教材"-->
+        <!--android:textColor="#ffffffff"-->
+        <!--android:textSize="12sp"-->
+        <!--/>-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/choose_subject"-->
+        <!--android:layout_marginTop="@dimen/dp_33"-->
+        <!--android:layout_marginStart="@dimen/dp_20"-->
+        <!--android:layout_below="@+id/tool_title"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:id="@+id/text_subject"-->
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="请选择"-->
+            <!--android:textColor="#ffffffff"-->
+            <!--android:textSize="@dimen/sp_16"-->
+            <!--/>-->
+        <!--<ImageView-->
+            <!--android:id="@+id/choose_image"-->
+            <!--android:src="@mipmap/rightdetail"-->
+            <!--android:layout_gravity="center"-->
+
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ll_tab"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_senior"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_22"
+            android:text="@string/senior"
+            android:gravity="center"
+            android:background="@drawable/chooseleft"
+            android:textColor="#ffffffff"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/tv_junior"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_22"
+            android:text="@string/junior"
+            android:gravity="center"
+            android:background="@drawable/righttuoyuan"
+            android:textColor="#ff1091e9"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+    <View
+        android:alpha="0.5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_below="@+id/ll_tab"
+        android:background="#CCCCCC"
+        android:id="@+id/fen"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_1"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/score_tab"
+        android:layout_below="@+id/fen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:tabBackground="@drawable/tabselector"
+
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#000000"
+        app:tabTextColor="#666666">
+
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/score_tab"
+        android:id="@+id/recy_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/dp_20"
+        android:id="@+id/recy_record"
+        android:layout_below="@+id/recy_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/hudong"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_below="@+id/recy_record"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/dp_44">
+
+        <ImageView
+            android:id="@+id/item_image_record"
+
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginStart="@dimen/dp_12"
+            android:src="@mipmap/icon_hu"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_19" />
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_marginTop="@dimen/dp_13"
+            android:layout_marginStart="@dimen/dp_46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wenti"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/sp_14"
+            />
+        <ImageView
+            android:id="@+id/item_jiantou"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_16"
+            android:src="@mipmap/righttou"
+            android:layout_width="@dimen/sp_14"
+            android:layout_height="@dimen/sp_14" />
+        <View
+            android:layout_marginStart="@dimen/dp_46"
+            android:background="#f1f1f1"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_1"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

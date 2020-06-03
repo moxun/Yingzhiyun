@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/normal_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        tools:ignore="UselessParent">
+
+        <q.rorbin.verticaltablayout.VerticalTabLayout
+            android:id="@+id/navigation_tab_layout"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="match_parent"
+            android:background="#F6F6F6"
+            app:tabBackground="@color/white"
+            app:tab_height="@dimen/dp_40"
+            app:indicator_color="@color/mainColor"
+            app:indicator_gravity="left"
+            app:tab_margin="@dimen/dp_15"
+            app:tab_mode="scrollable"
+            android:visibility="visible" />
+
+
+
+        <com.yingzhiyun.yingquxue.units.NoScrollViewPager
+            android:id="@+id/navigation_RecyclerView"
+            android:isScrollContainer="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+    </LinearLayout>
+</RelativeLayout>

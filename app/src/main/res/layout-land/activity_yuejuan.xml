@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/ColorF1F1F1"
+    >
+
+
+    <TextView
+        android:id="@+id/yiyue"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_17"
+        android:layout_width="14dp"
+        android:layout_height="wrap_content"
+        android:text="已阅
+        1/800份"
+        android:textColor="#ff1091e9"
+        android:textSize="16sp"
+        />
+    
+    <com.yingzhiyun.yingquxue.units.ZoomImageView
+
+        android:id="@+id/shijuan"
+
+        android:layout_marginStart="@dimen/dp_17"
+        android:layout_centerInParent="true"
+        android:layout_width="531dp"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/yuetika"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@+id/shijuan"
+        android:src="@mipmap/icon_yuetika"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30" />
+
+    <ImageView
+        android:id="@+id/finish"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@+id/yuetika"
+        android:src="@mipmap/icon_fanhui"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_toRightOf="@+id/shijuan"
+        android:id="@+id/keyword"
+        android:layout_below="@+id/finish"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_toRightOf="@+id/shijuan"
+        android:id="@+id/keyword_heng"
+        android:layout_below="@+id/finish"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:textColor="#ff1091e9"
+        android:textSize="17sp"
+        android:text="删除"
+        android:id="@+id/delete"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_below="@+id/keyword_heng"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_toRightOf="@+id/shijuan"
+        android:background="@drawable/keywordback"
+        android:layout_width="@dimen/dp_68"
+        android:layout_height="@dimen/dp_30" />
+    <TextView
+        android:textColor="#ff1091e9"
+        android:textSize="17sp"
+        android:text="确认"
+        android:id="@+id/ok"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_below="@+id/delete"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/shijuan"
+        android:background="@drawable/keywordback"
+        android:layout_width="@dimen/dp_68"
+        android:layout_height="@dimen/dp_30" />
+
+    <EditText
+        android:background="@null"
+        android:id="@+id/chengji"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#ffdb253b"
+        android:textSize="50sp"
+        />
+</RelativeLayout>

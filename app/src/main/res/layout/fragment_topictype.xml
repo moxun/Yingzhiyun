@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_30" />
+
+    <TextView
+        android:id="@+id/topic_title"
+        android:gravity="center"
+        android:text="选择题"
+        android:textSize="@dimen/sp_15"
+        android:textColor="@color/Color333333"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_30" />
+    <TextView
+        android:id="@+id/topiv_info"
+        android:layout_marginTop="@dimen/sp_15"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_below="@+id/topic_title"
+        android:textColor="@color/Color999999"
+        android:text="@string/search_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

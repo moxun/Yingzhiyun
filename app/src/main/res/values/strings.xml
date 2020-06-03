@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">应之运</string>
+
+    <string name="home_pager">首页</string>
+    <string name="classfiy">分类</string>
+    <string name="tiku">题库</string>
+    <string name="mine">我的</string>
+    <string name="search_hint">请输入搜索内容</string>
+    <string name="more">查看更多</string>
+    <string name="senior">高中</string>
+    <string name="junior">初中</string>
+    <string name="lianxi">章节练习</string>
+    <string name="zhangjie">章节练习</string>
+    <string name="register">注册</string>
+    <string name="welcome">欢迎来到应趣学~</string>
+    <string name="telphone">请输入手机号</string>
+    <string name="zhanghao_hint">请输入账号</string>
+    <string name="password">请输入密码</string>
+    <string name="login">登 陆</string>
+    <string name="codelogin">验证码登陆</string>
+    <string name="forgetpass">忘记密码</string>
+    <string name="other_login">其他方式登陆</string>
+    <string name="wechat">微信</string>
+    <string name="qq">QQ</string>
+    <string name="tel_register">手机号注册</string>
+    <string name="code">请输入验证码</string>
+    <string name="code_login">验证码登录</string>
+    <string name="update_pass">找回密码</string>
+    <string name="mycourse">我的课堂</string>
+    <string name="my_live">我的直播</string>
+    <string name="interactive">我的互动</string>
+    <string name="choose_book">选择课本</string>
+    <string name="search">搜索</string>
+
+    <string name="searchhistory">搜索记录</string>
+    <string name="tsetpager">模拟试题</string>
+    <string name="tixing">本题不支持作答，可在交卷后核对答案并查看解析</string>
+
+    <string name="report">报告</string>
+    <string name="answer_card">答题卡</string>
+    <string name="all_jiexi">全部解析</string>
+    <string name="wrong_jieji">错题解析</string>
+    <string name="wrong">错误</string>
+    <string name="right">正确</string>
+    <string name="wenti">问题互动</string>
+    <string name="hudong">互动</string>
+    <string name="sendquestion">提交答疑</string>
+    <string name="card">答题卡</string>
+    <string name="jiaojuan">交卷并查看结果</string>
+    <string name="info">详情</string>
+    <string name="area">互动区域</string>
+    <string name="record">做题记录</string>
+    <string name="lianxi_size">练习次数</string>
+    <string name="right_size">答对题数</string>
+    <string name="lianxi_time">练习时长</string>
+    <string name="biaoqian">标签：</string>
+    <string name="mingxiao">名校联考测评</string>
+    <string name="hint_tel">请留下手机号，以便和您联系</string>
+    <string name="app_name_new">应趣学</string>
+    <string name="shiming">根据相关规定，互联网账号需实名认证，请完成手机号绑定</string>
+    <string name="seetings_pwd">设置密码</string>
+    <string name="kai">本次考试得分</string>
+    <string name="manfen">满分</string>
+    <string name="score">得分</string>
+    <string name="fenshuorpaiming">分数及排名</string>
+    <string name="pingjun">平均分</string>
+    <string name="duizhao">各科成绩对照表</string>
+    <string name="youshi">相对优势学科</string>
+    <string name="lieshi">相对劣势学科</string>
+    <string name="course">精品课程</string>
+    <string name="dangci">当次账户余额</string>
+    <string name="benci">本次充值金额</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shuoming">1.应趣学会员是专门为用户打造高级级别的特权服务\n2.开通或者续费会员，服务一经开通，全部会员权益即刻开放，不接受中途退款，敬请谅解\n3.咨询电话 0371-88917006</string>
+
+
+</resources>

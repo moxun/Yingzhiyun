@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_30"
+        android:src="@mipmap/submintback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_300" />
+    <TextView
+        android:id="@+id/hint"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_below="@+id/back"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="在线考试已结束，系统将自动评分生成成绩报告
+可以前往“我的”成绩报告中查看，请同学们耐心
+等待"
+        android:textColor="#ff000000"
+
+        />
+    <TextView
+        android:id="@+id/back_home"
+        android:layout_width="@dimen/dp_335"
+        android:layout_height="@dimen/dp_42"
+        android:text="返回首页"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/login_button"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/sp_18"
+        />
+</RelativeLayout>
